@@ -1,0 +1,5 @@
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\Backup\ConfigTool_Blossom\obj\Debug\ConfigTool_nuri.vbprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\Backup\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.frmMain.resources
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\Backup\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.Resources.resources
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\Backup\ConfigTool_Blossom\obj\Debug\ConfigTool_nuri.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\Backup\ConfigTool_Blossom\obj\Debug\ConfigTool_nuri.vbproj.CoreCompileInputs.cache

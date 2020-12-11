@@ -1,0 +1,532 @@
+Dependencies for Project 'W5500EVB_NTP', Target 'W5500EVB': (DO NOT MODIFY !)
+F (..\STM32XX_Driver\src\stm32f10x_gpio.c)(0x5F45FF03)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\stm32f10x_gpio.o --omf_browse ..\output\stm32f10x_gpio.crf --depend ..\output\stm32f10x_gpio.d)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+F (..\STM32XX_Driver\src\stm32f10x_rcc.c)(0x5F45FF03)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\stm32f10x_rcc.o --omf_browse ..\output\stm32f10x_rcc.crf --depend ..\output\stm32f10x_rcc.d)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+F (..\STM32XX_Driver\src\stm32f10x_spi.c)(0x5F45FF03)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\stm32f10x_spi.o --omf_browse ..\output\stm32f10x_spi.crf --depend ..\output\stm32f10x_spi.d)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+F (..\STM32XX_Driver\src\stm32f10x_usart.c)(0x5F45FF03)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\stm32f10x_usart.o --omf_browse ..\output\stm32f10x_usart.crf --depend ..\output\stm32f10x_usart.d)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+F (..\STM32XX_Driver\src\misc.c)(0x5F45FF03)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\misc.o --omf_browse ..\output\misc.crf --depend ..\output\misc.d)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+F (..\STM32XX_Driver\src\stm32f10x_tim.c)(0x5F45FF03)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\stm32f10x_tim.o --omf_browse ..\output\stm32f10x_tim.crf --depend ..\output\stm32f10x_tim.d)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+F (..\System\core_cm3.c)(0x5F45FF03)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\core_cm3.o --omf_browse ..\output\core_cm3.crf --depend ..\output\core_cm3.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+F (..\System\system_stm32f10x.c)(0x5F45FF03)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\system_stm32f10x.o --omf_browse ..\output\system_stm32f10x.crf --depend ..\output\system_stm32f10x.d)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+F (..\System\startup_stm32f10x_hd.s)(0x5F45FF03)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_HD SETA 1"--list .\startup_stm32f10x_hd.lst --xref -o ..\output\startup_stm32f10x_hd.o --depend ..\output\startup_stm32f10x_hd.d)
+F (..\User\Application\main.c)(0x5FBF5D6C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+I (..\User\Application\include.h)(0x5FBF5D62)
+I (..\User\Driver\usart.h)(0x54DB1A1B)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\User\Application\config.h)(0x54DC4EB4)
+I (..\User\Application\Types.h)(0x54655E17)
+I (..\User\Driver\device.h)(0x54DC1132)
+I (..\User\Driver\spi2.h)(0x5423C920)
+I (..\User\Driver\socket.h)(0x5423C6C4)
+I (..\User\Driver\w5500.h)(0x544617D9)
+I (..\User\Driver\ult.h)(0x54DC1CAA)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\User\Driver\ntp.h)(0x54B1F07C)
+F (..\User\Application\stm32f10x_it.c)(0x543B3041)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\stm32f10x_it.o --omf_browse ..\output\stm32f10x_it.crf --depend ..\output\stm32f10x_it.d)
+I (..\User\Application\stm32f10x_it.h)(0x4D99A59E)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+F (..\User\Driver\device.c)(0x5FBF5D16)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\device.o --omf_browse ..\output\device.crf --depend ..\output\device.d)
+I (..\User\Driver\device.h)(0x54DC1132)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\User\Application\config.h)(0x54DC4EB4)
+I (..\User\Application\Types.h)(0x54655E17)
+I (..\User\Driver\socket.h)(0x5423C6C4)
+I (..\User\Driver\ult.h)(0x54DC1CAA)
+I (..\User\Driver\w5500.h)(0x544617D9)
+I (..\User\Driver\24c16.h)(0x543CC886)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+F (..\User\Driver\ntp.c)(0x54DC4F0F)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\ntp.o --omf_browse ..\output\ntp.crf --depend ..\output\ntp.d)
+I (..\User\Application\types.h)(0x54655E17)
+I (..\User\Driver\ntp.h)(0x54B1F07C)
+I (..\User\Application\config.h)(0x54DC4EB4)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+I (..\User\Driver\device.h)(0x54DC1132)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\User\Driver\socket.h)(0x5423C6C4)
+I (..\User\Driver\w5500.h)(0x544617D9)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+F (..\User\Driver\socket.c)(0x543E1721)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\socket.o --omf_browse ..\output\socket.crf --depend ..\output\socket.d)
+I (..\User\Driver\socket.h)(0x5423C6C4)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+I (..\User\Application\Types.h)(0x54655E17)
+I (..\User\Application\config.h)(0x54DC4EB4)
+I (..\User\Driver\device.h)(0x54DC1132)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\User\Driver\w5500.h)(0x544617D9)
+I (..\User\Driver\ult.h)(0x54DC1CAA)
+F (..\User\Driver\spi2.c)(0x54DC1BF8)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\spi2.o --omf_browse ..\output\spi2.crf --depend ..\output\spi2.d)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+I (..\User\Application\config.h)(0x54DC4EB4)
+I (..\User\Application\Types.h)(0x54655E17)
+I (..\User\Driver\device.h)(0x54DC1132)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\User\Driver\socket.h)(0x5423C6C4)
+I (..\User\Driver\w5500.h)(0x544617D9)
+I (..\User\Driver\ult.h)(0x54DC1CAA)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (D:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5475F300)
+F (..\User\Driver\ult.c)(0x54DC1B24)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\ult.o --omf_browse ..\output\ult.crf --depend ..\output\ult.d)
+I (..\User\Driver\ult.h)(0x54DC1CAA)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\User\Application\types.h)(0x54655E17)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+I (..\User\Application\config.h)(0x54DC4EB4)
+I (..\User\Driver\device.h)(0x54DC1132)
+I (..\User\Driver\w5500.h)(0x544617D9)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5475F2FA)
+F (..\User\Driver\usart.c)(0x54DB1A7C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\usart.o --omf_browse ..\output\usart.crf --depend ..\output\usart.d)
+I (..\User\Driver\usart.h)(0x54DB1A1B)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+F (..\User\Driver\w5500.c)(0x542506BF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\STM32XX_Driver\inc -I..\System -I..\User\Driver -I..\User\Application-I F:\STM32-program\W5500_Program_New\9.W5500EVB_NTP\9.W5500EVB_NTP\MDK5\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0-I D:\Keil_v5\ARM\CMSIS\Include-I D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o ..\output\w5500.o --omf_browse ..\output\w5500.crf --depend ..\output\w5500.d)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\User\Application\config.h)(0x54DC4EB4)
+I (..\System\stm32f10x.h)(0x5F45FF03)
+I (..\System\core_cm3.h)(0x5F45FF03)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E86FDDC)
+I (..\System\system_stm32f10x.h)(0x5F45FF03)
+I (..\User\Application\stm32f10x_conf.h)(0x5423AAC4)
+I (..\STM32XX_Driver\inc\stm32f10x_adc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_bkp.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_can.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_cec.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_crc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dac.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dbgmcu.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_dma.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_exti.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_flash.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_fsmc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_gpio.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_i2c.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_iwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_pwr.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rcc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_rtc.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_sdio.h)(0x5FBCAEEA)
+I (..\STM32XX_Driver\inc\stm32f10x_spi.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_tim.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_usart.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\stm32f10x_wwdg.h)(0x5F45FF03)
+I (..\STM32XX_Driver\inc\misc.h)(0x5F45FF03)
+I (..\User\Application\Types.h)(0x54655E17)
+I (..\User\Driver\device.h)(0x54DC1132)
+I (..\User\Driver\SPI2.h)(0x5423C920)
+I (..\User\Driver\w5500.h)(0x544617D9)
+I (..\User\Driver\socket.h)(0x5423C6C4)

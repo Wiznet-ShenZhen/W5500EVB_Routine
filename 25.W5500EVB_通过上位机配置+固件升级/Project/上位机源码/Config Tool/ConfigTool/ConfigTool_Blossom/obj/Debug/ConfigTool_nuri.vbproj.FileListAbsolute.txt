@@ -1,0 +1,26 @@
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.exe
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.xml
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.pdb
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\bin\Debug\ConfigTool_Nuri.exe
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\bin\Debug\ConfigTool_Nuri.pdb
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\bin\Debug\ConfigTool_Nuri.xml
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\ResolveAssemblyReference.cache
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.frmMain.resources
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.Resources.resources
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\GenerateResource-ResGen.read.4.tlog
+D:\_Beijing\research\io\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\j\Desktop\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.exe
+C:\Users\j\Desktop\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.xml
+C:\Users\j\Desktop\lsd_http_fw_update\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.pdb
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\bin\Debug\ConfigTool_Nuri.exe
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\bin\Debug\ConfigTool_Nuri.pdb
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\bin\Debug\ConfigTool_Nuri.xml
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_nuri.vbprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.frmMain.resources
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.Resources.resources
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_nuri.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_nuri.vbproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.exe
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.xml
+C:\Users\Administrator\Desktop\5-1-1 上位机远程固件更新\5-1-1 上位机远程固件更新\ConfigTool\ConfigTool_Blossom\obj\Debug\ConfigTool_Nuri.pdb
