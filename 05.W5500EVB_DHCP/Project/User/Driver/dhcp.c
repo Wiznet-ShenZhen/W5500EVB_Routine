@@ -814,9 +814,9 @@ uint8_t DHCP_run(void)//20180625
 				  if (check_DHCP_leasedIP()) 
 					{
 					// Network info assignment from DHCP
-						printf("W5500EVB IP:%d.%d.%d.%d\r\n",DHCP_allocated_ip[0],DHCP_allocated_ip[1],DHCP_allocated_ip[2],DHCP_allocated_ip[3]);
-	          printf("W5500EVB SN:%d.%d.%d.%d\r\n",DHCP_allocated_sn[0],DHCP_allocated_sn[1],DHCP_allocated_sn[2],DHCP_allocated_sn[3]);
-	          printf("W5500EVB GW:%d.%d.%d.%d\r\n",DHCP_allocated_gw[0],DHCP_allocated_gw[1],DHCP_allocated_gw[2],DHCP_allocated_gw[3]);
+						printf("W5500EVB ip:%d.%d.%d.%d\r\n",DHCP_allocated_ip[0],DHCP_allocated_ip[1],DHCP_allocated_ip[2],DHCP_allocated_ip[3]);
+	          printf("W5500EVB sn:%d.%d.%d.%d\r\n",DHCP_allocated_sn[0],DHCP_allocated_sn[1],DHCP_allocated_sn[2],DHCP_allocated_sn[3]);
+	          printf("W5500EVB gw:%d.%d.%d.%d\r\n",DHCP_allocated_gw[0],DHCP_allocated_gw[1],DHCP_allocated_gw[2],DHCP_allocated_gw[3]);
 						dhcp_ip_assign();
 						reset_DHCP_timeout();
 						dhcp_state = STATE_DHCP_LEASED;

@@ -1,8 +1,13 @@
+/*
+*
+@file		socket.h
+@brief	define function of socket API 
+*
+*/
 
 #ifndef	_SOCKET_H_
 #define	_SOCKET_H_
 
-#include "stm32f10x.h"
 #include "Types.h"
 
 extern uint8 socket(SOCKET s, uint8 protocol, uint16 port, uint8 flag); // Opens a socket(TCP or UDP or IP_RAW mode)
@@ -23,4 +28,3 @@ uint16 macraw_recv( uint8 * buf, uint16 len ); //Recv data (MACRAW)
 
 #endif
 /* _SOCKET_H_ */
-

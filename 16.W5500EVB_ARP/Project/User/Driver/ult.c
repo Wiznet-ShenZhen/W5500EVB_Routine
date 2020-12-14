@@ -1,16 +1,11 @@
+#include "ult.h"
 #include "config.h"
-#include "util.h"
-#include "stdio.h"
-#include "string.h"
-#include "stdarg.h"
 
-#ifdef __GNUC__
-  /* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf
-     set to 'Yes') calls __io_putchar() */
-  #define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
-#else
-  #define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
-#endif /* __GNUC__ */
+#include <stdio.h>
+#include <string.h>
+#include <stdarg.h>
+//#include <ctype.h>
+
 
 static u8  fac_us=0;//us延时倍乘数
 static u16 fac_ms=0;//ms延时倍乘数
@@ -67,44 +62,9 @@ void Delay_us( uint32 time_us )
 	SysTick->VAL =0X00;       //清空计数器	 
 }
 
-//int putchar(int ch)
-int fputc(int ch, FILE *f)
-{
-  // Write a character to the USART
-  while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET)
-	{}
 
-	/* e.g. write a character to the USART */
-	USART_SendData(USART1, ch);
 
-	/* Loop until the end of transmission */
-	while (USART_GetFlagStatus(USART1, USART_FLAG_TC) == RESET)
-	{}
-  //GPIO_SetBits(GPIOA, LED3); // led off
-
-  return ch;
-}
-
-/*int getchar(void)
-{
-  int ch;
-
-	while(USART_GetFlagStatus(USART1, USART_FLAG_RXNE) == RESET){
-	}
-
-	ch = USART_ReceiveData(USART1);
-
-  return ch;
-}  */
-
-/**
-@brief	CONVERT STRING INTO INTEGER
-@return	a integer number
-*/
-uint16 ATOI(
-	char* str,	/**< is a pointer to convert */
-	uint16 base	/**< is a base value (must be in the range 2 - 16) */
-	)
+uint16 ATOI(char* str,uint16 base	)
 {
   unsigned int num = 0;
   while (*str !=0)
@@ -112,16 +72,14 @@ uint16 ATOI(
   return num;
 }
 
-uint32 ATOI32(
-	char* str,	/**< is a pointer to convert */
-	uint16 base	/**< is a base value (must be in the range 2 - 16) */
-	)
+uint32 ATOI32(char* str,uint16 base	)
 {
   uint32 num = 0;
   while (*str !=0)
           num = num * base + C2D(*str++);
   return num;
 }
+
 
 void itoa(uint16 n,uint8 str[5], uint8 len)
 {
@@ -136,15 +94,8 @@ void itoa(uint16 n,uint8 str[5], uint8 len)
 
  return;
 }
-/**
-@brief	CONVERT STRING INTO HEX OR DECIMAL
-@return	success - 1, fail - 0
-*/
-int ValidATOI(
-	char* str, 	/**< is a pointer to string to be converted */
-	int base, 	/**< is a base value (must be in the range 2 - 16) */
-	int* ret		/**<  is a integer pointer to return */
-	)
+
+int ValidATOI(char* str, int base,int* ret)
 {
   int c;
   char* tstr = str;
@@ -159,29 +110,15 @@ int ValidATOI(
   *ret = ATOI(str,base);
   return 1;
 }
-
-/**
-@brief	replace the specified character in a string with new character
-*/ 
-void replacetochar(
-	char * str, 		/**< pointer to be replaced */
-	char oldchar, 	/**< old character */
-	char newchar	/**< new character */
-	)
+ 
+void replacetochar(char * str,	char oldchar,char newchar	)
 {
   int x;
   for (x = 0; str[x]; x++) 
     if (str[x] == oldchar) str[x] = newchar;	
 }
-/**
-@brief	CONVERT CHAR INTO HEX
-@return	HEX
-  
-This function converts HEX(0-F) to a character
-*/
-char C2D(
-	uint8 c	/**< is a character('0'-'F') to convert to HEX */
-	)
+
+char C2D(uint8 c	)
 {
 	if (c >= '0' && c <= '9')
 		return c - '0';
@@ -225,6 +162,7 @@ void mid(int8* src, int8* s1, int8* s2, int8* sub)
   strncpy(sub,sub1,n);
   sub[n]=0;
 }
+/*
 void inet_addr_(unsigned char* addr,unsigned char *ip)
 {
 	int i;
@@ -245,22 +183,12 @@ void inet_addr_(unsigned char* addr,unsigned char *ip)
 		nexttok = NULL;
 	}
 }	
+*/
 #ifdef USE_FULL_ASSERT
-/*******************************************************************************
-* Function Name  : assert_failed
-* Description    : Reports the name of the source file and the source line number
-*                  where the assert_param error has occurred.
-* Input          : - file: pointer to the source file name
-*                  - line: assert_param error line source number
-* Output         : None
-* Return         : None
-*******************************************************************************/
+
 void assert_failed(uint8_t* file, uint32_t line)
 { 
-  /* User can add his own implementation to report the file name and line number,
-     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
-
-  /* Infinite loop */
+ 
   while (1)
   {
   }

@@ -47,7 +47,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>..\Output\</OutputDirectory>
-          <OutputName>W5500EVB_DHCP</OutputName>
+          <OutputName>W5500EVB_ARP</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
@@ -574,24 +574,29 @@
               <FilePath>..\User\Driver\socket.c</FilePath>
             </File>
             <File>
+              <FileName>spi2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Driver\spi2.c</FilePath>
+            </File>
+            <File>
+              <FileName>ult.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Driver\ult.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Driver\usart.c</FilePath>
+            </File>
+            <File>
               <FileName>w5500.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Driver\w5500.c</FilePath>
             </File>
             <File>
-              <FileName>dhcp.c</FileName>
+              <FileName>arp.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\User\Driver\dhcp.c</FilePath>
-            </File>
-            <File>
-              <FileName>util.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\Driver\util.c</FilePath>
-            </File>
-            <File>
-              <FileName>mcu_init.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\Driver\mcu_init.c</FilePath>
+              <FilePath>..\User\Driver\arp.c</FilePath>
             </File>
             <File>
               <FileName>sockutil.c</FileName>
@@ -599,14 +604,9 @@
               <FilePath>..\User\Driver\sockutil.c</FilePath>
             </File>
             <File>
-              <FileName>SPI2.c</FileName>
+              <FileName>mcu_init.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\User\Driver\SPI2.c</FilePath>
-            </File>
-            <File>
-              <FileName>md5.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\Driver\md5.c</FilePath>
+              <FilePath>..\User\Driver\mcu_init.c</FilePath>
             </File>
           </Files>
         </Group>

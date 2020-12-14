@@ -1,17 +1,8 @@
-/*
-*
-@file    socket.c
-@brief   setting chip register for socket
-      last update : 2013. Nov
-*
-*/
-//#include "stm32f10x_type.h"
-#include "stm32f10x.h"
+#include "socket.h"
 #include "config.h"
 #include "stdio.h"
 #include "w5500.h"
-#include "socket.h"
-#include "util.h"
+#include "ult.h"
 
 static uint16 local_port;
 extern uint16 sent_ptr;
@@ -65,9 +56,9 @@ void close(SOCKET s)
 
    IINCHIP_WRITE( Sn_CR(s) ,Sn_CR_CLOSE);
 
-   /* wait to process the command... */	 
-   while( IINCHIP_READ(Sn_CR(s)) )
-		  ;
+   /* wait to process the command... */
+   while( IINCHIP_READ(Sn_CR(s) ) )
+      ;
    /* ------- */
         /* all clear */
    IINCHIP_WRITE( Sn_IR(s) , 0xFF);
@@ -80,19 +71,19 @@ void close(SOCKET s)
 */
 uint8 listen(SOCKET s)
 {
-   uint8 ret;
-   if (IINCHIP_READ( Sn_SR(s) ) == SOCK_INIT)
+   uint8 ret;			// 定义一个监听标志位，若Sn_CR的LISTEN命令发送成功，其值为1，否则为0
+   
+	if (IINCHIP_READ( Sn_SR(s) ) == SOCK_INIT)		// 若Sn_SR处于初始化状态，进入循环
    {
-      IINCHIP_WRITE( Sn_CR(s) ,Sn_CR_LISTEN);
-      /* wait to process the command... */
-      while( IINCHIP_READ(Sn_CR(s) ) )
+      IINCHIP_WRITE( Sn_CR(s) ,Sn_CR_LISTEN);		// MCU配置W5500为监听状态
+
+      while( IINCHIP_READ(Sn_CR(s) ) )					// 配置完成，Sn_CR自动清零
          ;
-      /* ------- */
-      ret = 1;
+      ret = 1;																	// LISTEN命令发送成功，ret=1
    }
    else
    {
-      ret = 0;
+      ret = 0;																	// 否则，ret=0
    }
    return ret;
 }
@@ -175,10 +166,9 @@ uint16 send(SOCKET s, const uint8 * buf, uint16 len)
   uint16 ret=0;
   uint16 freesize=0;
 
-  if (len > getIINCHIP_TxMAX(s)) ret = getIINCHIP_TxMAX(s); // check size not to exceed MAX size.
+  if (len > getIINCHIP_TxMAX(s)) ret = getIINCHIP_TxMAX(s);
   else ret = len;
 
-  // if freebuf is available, start.
   do
   {
     freesize = getSn_TX_FSR(s);
@@ -190,12 +180,9 @@ uint16 send(SOCKET s, const uint8 * buf, uint16 len)
     }
   } while (freesize < ret);
 
-
-  // copy data
   send_data_processing(s, (uint8 *)buf, ret);
   IINCHIP_WRITE( Sn_CR(s) ,Sn_CR_SEND);
 
-  /* wait to process the command... */
   while( IINCHIP_READ(Sn_CR(s) ) );
 
   while ( (IINCHIP_READ(Sn_IR(s) ) & Sn_IR_SEND_OK) != Sn_IR_SEND_OK )
@@ -232,20 +219,21 @@ uint16 recv(SOCKET s, uint8 * buf, uint16 len)
    uint16 ret=0;
    if ( len > 0 )
    {
-      recv_data_processing(s, buf, len);
-      IINCHIP_WRITE( Sn_CR(s) ,Sn_CR_RECV);
-      /* wait to process the command... */
-      while( IINCHIP_READ(Sn_CR(s) ));
-      /* ------- */
-      ret = len;
+      recv_data_processing(s, buf, len);				// 数据接收进程：将通过Sockets的buf接受的长度为len的数据写入指针对应的MCU的缓存地址
+
+			IINCHIP_WRITE( Sn_CR(s) ,Sn_CR_RECV);			// MCU配置Sn_CR为RECV
+
+      while( IINCHIP_READ(Sn_CR(s) ));					// 配置完成，Sn_CR自动清零
+
+      ret = len;																// 将接收数据长度值赋给ret
    }
-   return ret;
+   return ret;																	// 返回ret的值。有返回值说明W5500有数据接收，并不断重复接收这一进程
 }
 
 
 /**
 @brief   This function is an application I/F function which is used to send the data for other then TCP mode.
-         Unlike TCP transmission, The peer's destination address and the port is needed.
+      Unlike TCP transmission, The peer's destination address and the port is needed.
 
 @return  This function return send data size for success else -1.
 */
@@ -253,7 +241,8 @@ uint16 sendto(SOCKET s, const uint8 * buf, uint16 len, uint8 * addr, uint16 port
 {
    uint16 ret=0;
 
-   if (len > getIINCHIP_TxMAX(s)) ret = getIINCHIP_TxMAX(s); // check size not to exceed MAX size.
+   if (len > getIINCHIP_TxMAX(s)) 
+   ret = getIINCHIP_TxMAX(s); // check size not to exceed MAX size.
    else ret = len;
 
    if( ((addr[0] == 0x00) && (addr[1] == 0x00) && (addr[2] == 0x00) && (addr[3] == 0x00)) || ((port == 0x00)) )//||(ret == 0) )
@@ -271,20 +260,20 @@ uint16 sendto(SOCKET s, const uint8 * buf, uint16 len, uint8 * addr, uint16 port
       IINCHIP_WRITE( Sn_DPORT1(s),(uint8)(port & 0x00ff));
       // copy data
       send_data_processing(s, (uint8 *)buf, ret);
-      IINCHIP_WRITE( Sn_CR(s) ,Sn_CR_SEND); /* send command flag */
+      IINCHIP_WRITE( Sn_CR(s) ,Sn_CR_SEND);
       /* wait to process the command... */
-      while( IINCHIP_READ( Sn_CR(s) ) );
+      while( IINCHIP_READ( Sn_CR(s) ) )
+         ;
       /* ------- */
-
-      while( (IINCHIP_READ( Sn_IR(s) ) & Sn_IR_SEND_OK) != Sn_IR_SEND_OK )//判断发送是否完成
+     while( (IINCHIP_READ( Sn_IR(s) ) & Sn_IR_SEND_OK) != Sn_IR_SEND_OK )
+     {
+      if (IINCHIP_READ( Sn_IR(s) ) & Sn_IR_TIMEOUT)
       {
-         if (IINCHIP_READ( Sn_IR(s) ) & Sn_IR_TIMEOUT)//判断发送命令是否超时
-         {
             /* clear interrupt */
-            IINCHIP_WRITE( Sn_IR(s) , (Sn_IR_SEND_OK | Sn_IR_TIMEOUT)); /* clear SEND_OK & TIMEOUT */
-            return 0;
-         }
+      IINCHIP_WRITE( Sn_IR(s) , (Sn_IR_SEND_OK | Sn_IR_TIMEOUT)); /* clear SEND_OK & TIMEOUT */
+      return 0;
       }
+     }
       IINCHIP_WRITE( Sn_IR(s) , Sn_IR_SEND_OK);
    }
    return ret;
@@ -393,6 +382,8 @@ void macraw_open(void)
   close(sock_num); // Close the 0-th socket
   socket(sock_num, Sn_MR_MACRAW, dummyPort,mFlag);  // OPen the 0-th socket with MACRAW mode
 }
+
+
 uint16 macraw_send( const uint8 * buf, uint16 len )
 {
    uint16 ret=0;
