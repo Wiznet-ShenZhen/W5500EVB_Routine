@@ -13,7 +13,7 @@
 PINGMSGR PingRequest;	 
 PINGMSGR PingReply;	   
 
-uint8  remote_ip[4]={192,168,1,113};											/*‘∂∂ÀIPµÿ÷∑*/
+uint8  remote_ip[4]={192,168,1,101};											/*‘∂∂ÀIPµÿ÷∑*/
 static uint16 RandomID = 0x1234; 
 static uint16 RandomSeqNum = 0x4321;
 uint8 ping_reply_received = 0; 

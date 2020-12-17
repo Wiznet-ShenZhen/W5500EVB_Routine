@@ -8,15 +8,15 @@
 
 CONFIG_MSG  ConfigMsg, RecvMsg;
 	
-uint8 txsize[MAX_SOCK_NUM] = {4,2,2,2,2,2,2,0};  //声明Socket发送缓存大小
-uint8 rxsize[MAX_SOCK_NUM] = {4,2,2,2,2,2,2,0};  //声明Socket接收缓存大小
+uint8 txsize[MAX_SOCK_NUM] = {2,2,2,2,2,2,2,2};  //声明Socket发送缓存大小
+uint8 rxsize[MAX_SOCK_NUM] = {2,2,2,2,2,2,2,2};  //声明Socket接收缓存大小
 //public buffer for DHCP, DNS, HTTP
 uint8 pub_buf[1460];
 uint8 mac[6]={0x00,0x08,0xdc,0x11,0x11,0x11};
-uint8 lip[4]={192,168,1,150};
+uint8 lip[4]={192,168,10,150};
 uint8 sub[4]={255,255,255,0};
-uint8 gw[4]={192,168,1,1};
-uint8 dns[4]={8,8,8,8};
+uint8 gw[4]={192,168,10,1};
+uint8 dns[4]={114,114,114,114};
 
 void GPIO_Configuration(void)
 {

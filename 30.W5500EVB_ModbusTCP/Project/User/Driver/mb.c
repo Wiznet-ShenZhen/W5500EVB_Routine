@@ -34,6 +34,7 @@ void mbTCPtoEVB(void)
 			else if((uint8)pucASCIIBufferCur[4]==0x00)
 			{
 			  GPIO_SetBits(GPIOA, GPIO_Pin_0);
+				printf("LED 0 OFF\r\n");
 			}
 		}
 		else if(pucASCIIBufferCur[3]==0x01)
@@ -46,6 +47,7 @@ void mbTCPtoEVB(void)
 			else if((uint8)pucASCIIBufferCur[4]==0x00)
 			{
 			  GPIO_SetBits(GPIOA, GPIO_Pin_1);
+				printf("LED 1 OFF\r\n");
 			}
 		}
 		else if(pucASCIIBufferCur[3]==0x02)
@@ -58,6 +60,7 @@ void mbTCPtoEVB(void)
 			else if((uint8)pucASCIIBufferCur[4]==0x00)
 			{
 			  GPIO_SetBits(GPIOA, GPIO_Pin_2);
+				printf("LED 2 OFF\r\n");
 			}
 		}
 		else if(pucASCIIBufferCur[3]==0x03)
@@ -70,6 +73,7 @@ void mbTCPtoEVB(void)
 			else if((uint8)pucASCIIBufferCur[4]==0x00)
 			{
 			  GPIO_SetBits(GPIOA, GPIO_Pin_3);
+				printf("LED 3 OFF\r\n");
 			}
 		}
 //		while(usASCIIBufferPos)

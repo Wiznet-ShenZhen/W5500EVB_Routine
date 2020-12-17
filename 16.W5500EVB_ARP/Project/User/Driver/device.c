@@ -91,7 +91,7 @@ void set_network(void)
   uint8 sub[4]={255,255,255,0};
   uint8 gw[4]={192,168,1,1};
   uint8 dns[4]={8,8,8,8};
-  uint8 rip[4]={192,168,1,1};
+  uint8 rip[4]={192,168,1,101};
   memcpy(ConfigMsg.lip, lip, 4);
   memcpy(ConfigMsg.sub, sub, 4);
   memcpy(ConfigMsg.gw,  gw, 4);

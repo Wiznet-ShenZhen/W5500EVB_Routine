@@ -39,6 +39,7 @@ int main()
 	printf("W5500EVB Init Complete!\r\n");
   printf("Start ARP Test!\r\n"); 	
 	
+	Delay_ms(1000);
 	while(1)																												
 	{
 		 do_arp();

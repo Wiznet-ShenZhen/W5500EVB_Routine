@@ -30,7 +30,8 @@ int main()
 	
 	printf("W5500EVB Init Complete!\r\n");
   printf("Start PING Test!\r\n"); 	
-		
+	
+	Delay_ms(1000);
 	do_ping();
 	
 }
