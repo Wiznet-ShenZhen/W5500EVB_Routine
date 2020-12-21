@@ -29,6 +29,7 @@ int main(void)
 	while(1)														/*循环执行的函数*/ 
 	{
 			do_https();                     /*打开HTTP Server*/
+			do_netbios();                   /*NetBios测试程序*/
 	}
 } 
 
