@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\Output\W5500EVB_Init.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\Output\W5500EVB_Init.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Fri Dec 04 15:18:36 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Dec 22 15:08:18 2020
 <BR><P>
 <H3>Maximum Stack Usage =        248 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -147,8 +147,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_CfgGpio
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_Init
 </UL>
 
@@ -164,7 +164,7 @@ Global Symbols
 
 <P><STRONG><a name="[8c]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_Init
 </UL>
@@ -245,8 +245,8 @@ Global Symbols
 
 <P><STRONG><a name="[88]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_CfgGpio
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_Init
 </UL>
 
@@ -586,7 +586,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
 </UL>
 
 <P><STRONG><a name="[19a]"></a>USART_StructInit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -596,7 +596,7 @@ Global Symbols
 <P><STRONG><a name="[19c]"></a>USART_ClockStructInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
 
 <P><STRONG><a name="[9c]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
 </UL>
 
 <P><STRONG><a name="[19d]"></a>USART_ITConfig</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -854,11 +854,11 @@ Global Symbols
 <LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_w5500_ip
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_CfgGpio
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_netbios
 <LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_https
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
@@ -935,7 +935,7 @@ Global Symbols
 
 <P><STRONG><a name="[84]"></a>ee_Erase</STRONG> (Thumb, 56 bytes, Stack size 264 bytes, bsp_i2c_ee.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ee_WriteBytes
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 
 <P><STRONG><a name="[85]"></a>ee_Test</STRONG> (Thumb, 180 bytes, Stack size 520 bytes, bsp_i2c_ee.o(.text), UNUSED)
@@ -943,7 +943,7 @@ Global Symbols
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ee_ReadBytes
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ee_CheckOk
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ee_Delay
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 
 <P><STRONG><a name="[7d]"></a>i2c_Start</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, bsp_i2c_gpio.o(.text))
@@ -1043,7 +1043,7 @@ Global Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 </UL>
 
 <P><STRONG><a name="[8f]"></a>SPI_FLASH_SendByte</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, bsp_spi_flash.o(.text))
@@ -1078,7 +1078,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer2_init
 </UL>
 
-<P><STRONG><a name="[6c]"></a>USART1_Config</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, bsp_usart1.o(.text))
+<P><STRONG><a name="[6e]"></a>USART1_Config</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, bsp_usart1.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = USART1_Config &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
@@ -1223,7 +1223,7 @@ Global Symbols
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;htonl
 <LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_SR
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSn_RX_RSR
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1284,7 +1284,7 @@ Global Symbols
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;close
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;proc_http
 </UL>
@@ -1316,7 +1316,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_netbios
 </UL>
@@ -1614,7 +1614,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_write_buf
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendto
@@ -1626,7 +1626,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_read_buf
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_WRITE
 <LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_READ
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;recv
 </UL>
@@ -1669,7 +1669,7 @@ Global Symbols
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSUBR
 <LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSIPR
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setGAR
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1682,7 +1682,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6f]"></a>gpio_for_w5500_config</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, w5500_conf.o(.text))
+<P><STRONG><a name="[6c]"></a>gpio_for_w5500_config</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, w5500_conf.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = gpio_for_w5500_config &rArr; SPI_FLASH_Init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
@@ -1807,7 +1807,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_cson
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSHAR
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;send_data_processing
@@ -1822,7 +1822,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IINCHIP_SpiSendData
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_cson
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;iinchip_csoff
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSHAR
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getSUBR
@@ -1854,7 +1854,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[fc]"></a>reboot</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, w5500_conf.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<BR><BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 
 <P><STRONG><a name="[ba]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
@@ -2069,7 +2069,7 @@ Global Symbols
 
 <P><STRONG><a name="[1c2]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
 
-<P><STRONG><a name="[6e]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
+<P><STRONG><a name="[6f]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ee_Test

@@ -12,17 +12,18 @@ int main(void)
   /***** MCU时钟初始化 *****/							  
 	Systick_Init(72);	
 	
-	/***** 中断控制器配置 *****/
+	/***** 配置嵌套中断向量 *****/
 	NVIC_Configuration();
 	
-	/***** GPIO、SPI初始化 *****/
-	GPIO_Configuration();			
+	/***** GPIO *****/
+	GPIO_Configuration();	
+	
+	/***** SPI初始化 *****/
 	WIZ_SPI_Init();
 	
 	/***** 串口初始化 *****/
 	USART1_Init(); 		
-	
-	
+		
 	/***** 硬重启W5500 *****/
 	Reset_W5500();
 	
@@ -40,7 +41,7 @@ int main(void)
 
 	while(1)																				
 	{	
-		// Socket状态机
+		/***** Socket状态机 *****/
 		tcpc(server_ip);
 	}
 }

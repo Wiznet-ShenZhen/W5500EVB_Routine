@@ -6,16 +6,28 @@ extern uint8 rxsize[];
 uint8 buffer[2048];/*定义一个2KB的缓存*/  
 int main()
 {
-  Systick_Init(72);/* 初始化Systick工作时钟*/ 
-  GPIO_Configuration();/* 配置GPIO*/
-  USART1_Init(); /*初始化串口通信:115200@8-n-1*/
+	/***** MCU时钟初始化 *****/
+  Systick_Init(72);
+	
+	/***** GPIO初始化 *****/
+  GPIO_Configuration();
+	
+	/***** 串口初始化 *****/
+  USART1_Init(); 
   printf("W5500 EVB initialization over.\r\n");
  
-  Reset_W5500();/*硬重启W5500*/
-  WIZ_SPI_Init();/*初始化SPI接口*/
+	/***** 硬重启W5500 *****/
+  Reset_W5500();
+	
+	/***** SPI初始化 *****/
+  WIZ_SPI_Init();
   printf("W5500 initialized!\r\n"); 
+	
+	/***** W5500的IP信息初始化 *****/	
 	set_default(); 	
 	set_network(); 
+	
+	/***** NTP初始化 *****/
   ntpclient_init(); 
   while(1)
   {

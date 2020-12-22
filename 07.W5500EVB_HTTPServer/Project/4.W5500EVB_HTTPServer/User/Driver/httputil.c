@@ -16,7 +16,7 @@
 extern CONFIG_MSG  ConfigMsg;
 extern char tx_buf[MAX_URI_SIZE];
 extern char rx_buf[MAX_URI_SIZE];
-extern uint8 reboot_flag;
+
 
 uint8 boundary[64];
 uint8 tmp_buf[1460]={0xff,};

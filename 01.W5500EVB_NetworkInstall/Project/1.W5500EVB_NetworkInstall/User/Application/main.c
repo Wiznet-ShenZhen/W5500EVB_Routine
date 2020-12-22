@@ -1,15 +1,14 @@
-#include "usart.h"
-#include "device.h"
-#include "spi2.h"
-#include "ult.h"
+#include "include.h"
 
 int main(void)
 {
 	/***** MCU时钟初始化 *****/							  
 	Systick_Init(72);				
 	
-	/***** GPIO、SPI初始化 *****/
-	GPIO_Configuration();			
+	/***** GPIO初始化 *****/
+	GPIO_Configuration();
+
+	/***** SPI初始化 *****/	
 	WIZ_SPI_Init();					
 	
 	/***** 串口初始化 *****/

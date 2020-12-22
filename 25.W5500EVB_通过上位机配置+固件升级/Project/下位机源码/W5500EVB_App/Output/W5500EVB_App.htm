@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\Output\W5500EVB_App.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\Output\W5500EVB_App.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Dec 08 12:10:58 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Dec 22 15:02:01 2020
 <BR><P>
 <H3>Maximum Stack Usage =        152 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -295,8 +295,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_Init
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_CfgGpio
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
 </UL>
 
 <P><STRONG><a name="[13a]"></a>GPIO_StructInit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
@@ -312,7 +312,7 @@ Global Symbols
 <P><STRONG><a name="[b1]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_Init
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 <LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wiz_cs
 </UL>
 
@@ -393,8 +393,8 @@ Global Symbols
 <P><STRONG><a name="[ad]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_Init
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_CfgGpio
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
 </UL>
 
 <P><STRONG><a name="[b0]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text))
@@ -729,7 +729,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
 </UL>
 
 <P><STRONG><a name="[1b4]"></a>USART_StructInit</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -739,7 +739,7 @@ Global Symbols
 <P><STRONG><a name="[1b6]"></a>USART_ClockStructInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
 
 <P><STRONG><a name="[c1]"></a>USART_Cmd</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
 </UL>
 
 <P><STRONG><a name="[1b7]"></a>USART_ITConfig</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -996,11 +996,11 @@ Global Symbols
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;systick_init
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_network
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;reset_w5500
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_config
 <LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_udp_config
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;do_fw_update
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Config
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Configuration
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
@@ -1246,7 +1246,7 @@ Global Symbols
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 <LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_for_w5500_config
 </UL>
 
 <P><STRONG><a name="[b4]"></a>SPI_FLASH_SendByte</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, bsp_spi_flash.o(.text))
@@ -1285,7 +1285,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer2_init
 </UL>
 
-<P><STRONG><a name="[79]"></a>USART1_Config</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, bsp_usart1.o(.text))
+<P><STRONG><a name="[7a]"></a>USART1_Config</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, bsp_usart1.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = USART1_Config &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
@@ -1816,7 +1816,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;setSHAR
 </UL>
 
-<P><STRONG><a name="[7a]"></a>gpio_for_w5500_config</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, w5500_conf.o(.text))
+<P><STRONG><a name="[79]"></a>gpio_for_w5500_config</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, w5500_conf.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = gpio_for_w5500_config &rArr; SPI_FLASH_Init &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd

@@ -12,15 +12,18 @@ int main(void)
 	/***** MCU时钟初始化 *****/							  
 	Systick_Init(72);	
 	
-	/***** 中断控制器配置 *****/
+	/***** 配置嵌套中断向量 *****/
 	NVIC_Configuration();
 	
-	/***** GPIO、SPI初始化 *****/
-	GPIO_Configuration();			
+	/***** GPIO初始化 *****/
+	GPIO_Configuration();
+
+	/***** SPI初始化 *****/	
 	WIZ_SPI_Init();
 	
 	/***** 串口初始化 *****/
-	USART1_Init(); 		
+	USART1_Init(); 
+	
 	/***** 硬重启W5500 *****/
 	Reset_W5500();
 	
