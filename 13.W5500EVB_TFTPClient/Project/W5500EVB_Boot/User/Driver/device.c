@@ -103,18 +103,18 @@ void set_network(void)
   setRTR(2000);/*设置溢出时间值*/
   setRCR(3);/*设置最大重新发送次数*/
   getSIPR (ip);
-  printf("IP : %d.%d.%d.%d\r\n", ip[0],ip[1],ip[2],ip[3]);
+  printf("W5500EVB IP : %d.%d.%d.%d\r\n", ip[0],ip[1],ip[2],ip[3]);
   getSUBR(ip);
-  printf("SN : %d.%d.%d.%d\r\n", ip[0],ip[1],ip[2],ip[3]);
+  printf("W5500EVB SN : %d.%d.%d.%d\r\n", ip[0],ip[1],ip[2],ip[3]);
   getGAR(ip);
-  printf("GW : %d.%d.%d.%d\r\n", ip[0],ip[1],ip[2],ip[3]);
+  printf("W5500EVB GW : %d.%d.%d.%d\r\n", ip[0],ip[1],ip[2],ip[3]);
 }
 
 void set_default(void)
 {
 	if(ip_from_define==1)
 	{
-		printf(" IP from define	\r\n");	
+		printf("IP from define	\r\n");	
 		memcpy(ConfigMsg.mac, mac, 6);
 		memcpy(ConfigMsg.lip,local_ip,4);
 		memcpy(ConfigMsg.sub,subnet,4);
@@ -125,14 +125,14 @@ void set_default(void)
 	{
 		if(dhcp_ok==1)
 		{
-			printf(" IP from DHCP	\r\n");		 
+			printf("IP from DHCP	\r\n");		 
 			memcpy(ConfigMsg.lip,DHCP_GET.lip, 4);
 			memcpy(ConfigMsg.sub,DHCP_GET.sub, 4);
 			memcpy(ConfigMsg.gw,DHCP_GET.gw, 4);
 			memcpy(ConfigMsg.dns,DHCP_GET.dns,4);
 		}
 		else
-		printf(" DHCP is fail	\r\n");
+		printf("DHCP is fail	\r\n");
 	}
   ConfigMsg.dhcp=0;
   ConfigMsg.debug=1;

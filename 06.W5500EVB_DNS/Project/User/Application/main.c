@@ -1,19 +1,11 @@
-#include "usart.h"
-#include "device.h"
-#include "spi2.h"
-#include "ult.h"
-#include "socket.h"
-#include "w5500.h"
-#include "dns.h"
-#include <string.h>
+#include "include.h"
 
-extern uint8 buffer[2048];												// 定义一个2KB的数组，用来存放Socket的通信数据
 int main()
 {	
   /***** MCU时钟初始化 *****/				  
 	Systick_Init(72);	
 
-	/***** 中断配置 *****/
+	/***** 配置嵌套中断向量 *****/
 	NVIC_Configuration();
 	
 	/***** GPIO初始化 *****/
@@ -40,7 +32,7 @@ int main()
 	{
 		if(check_usart_buf())  //判断串口接收的数据
 		{ 
-		   do_dns(buffer);  // DNS过程
+		   do_dns();  // DNS过程
 		}										
 		
 	}

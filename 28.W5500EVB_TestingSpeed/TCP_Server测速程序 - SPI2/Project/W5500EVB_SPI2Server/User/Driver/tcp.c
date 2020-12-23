@@ -1,8 +1,5 @@
 #include "tcp.h"
 
-extern uint8 txsize[];										// 引用外部变量，声明Socket发送缓存大小
-extern uint8 rxsize[];										// 引用外部变量，声明Socket接收缓存大小
-
 uint8  buffer[16384];
 
 uint16 local_port = 5000;									// 初始化一个本地端口

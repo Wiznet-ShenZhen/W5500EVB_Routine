@@ -1,20 +1,14 @@
-#include "usart.h"
-#include "device.h"
-#include "spi2.h"
-#include "ult.h"
-#include "socket.h"
-#include "w5500.h"
-#include "udp.h"
-#include <string.h>
+#include "include.h"
 
-extern uint8  remote_ip[4];			// 远程IP地址
-extern uint16 remote_port;			// 远程端口
 extern uint16 local_port;				// 本地端口
 
 int main()
 {
   /***** MCU时钟初始化 *****/				  
 	Systick_Init(72);	
+
+	/***** 中断控制器配置 *****/
+	NVIC_Configuration();
 	
 	/***** GPIO初始化 *****/
 	GPIO_Configuration();	

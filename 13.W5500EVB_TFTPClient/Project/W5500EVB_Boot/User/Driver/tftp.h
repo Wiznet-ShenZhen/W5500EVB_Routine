@@ -72,4 +72,7 @@ int TFTP_run(void);
 void TFTP_read_request(uint32_t server_ip, uint8_t *filename);
 void tftp_timeout_handler(void);
 void save_data(uint8_t *data, uint32_t data_len, uint16_t block_number);
+int get_usart_buf(void);
+void tftp_start(void);
+void check_flash_app(void);
 #endif	/*__TFTP_H__ */

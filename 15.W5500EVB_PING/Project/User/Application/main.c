@@ -1,11 +1,4 @@
-#include "usart.h"
-#include "device.h"
-#include "spi2.h"
-#include "ult.h"
-#include "socket.h"
-#include "w5500.h"
-#include "ping.h"
-#include <string.h>
+#include "include.h"
 
 int main()
 {

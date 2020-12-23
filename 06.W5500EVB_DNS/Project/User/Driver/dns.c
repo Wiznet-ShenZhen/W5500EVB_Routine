@@ -334,7 +334,7 @@ uint8 dns_query(uint8 s, uint8 * name)
   return DNS_RET_PROGRESS;
 }
 
-uint16 do_dns(uint8 *domain_name)
+uint16 do_dns()
 {
   uint8 dns_retry_cnt=0;
   uint8 dns_ok=0;
@@ -345,7 +345,7 @@ uint16 do_dns(uint8 *domain_name)
 
   else if(memcmp(ConfigMsg.dns,"\x00\x00\x00\x00",4))//判断DNS服务器的IP地址是否配置
   {
-    switch(dns_query(SOCK_DNS,domain_name))//发出DNS请求报文和解析DNS响应报文
+    switch(dns_query(SOCK_DNS,buffer))//发出DNS请求报文和解析DNS响应报文
     {
       case DNS_RET_SUCCESS:								//DNS解析域名成功
         dns_ok=1;														//DNS运行标志位置1

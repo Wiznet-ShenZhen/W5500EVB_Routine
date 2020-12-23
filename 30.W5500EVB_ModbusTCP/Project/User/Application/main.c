@@ -1,18 +1,6 @@
-#include "usart.h"
-#include "device.h"
-#include "spi2.h"
-#include "ult.h"
-#include "socket.h"
-#include "w5500.h"
-#include "24c16.h"
-#include "string.h"
-#include "mbascii.h"
+#include "include.h"
 
 uint16 local_port=5000;										// 定义一个本地端口并初始化 	
-extern uint8 txsize[];										// 引用外部变量，声明Socket发送缓存大小
-extern uint8 rxsize[];										// 引用外部变量，声明Socket接收缓存大小
-
-uint8 buffer[2048];												// 定义一个2KB的数组，用来存放Socket的通信数据
 
 int main(void)
 {  												

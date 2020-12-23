@@ -27,25 +27,33 @@ uint16 len=0;
 void do_udp()
 {  
 	switch(getSn_SR(0))																						// 获取socket0的状态
-		{
-			case SOCK_UDP:																							// Socket处于初始化完成(打开)状态
-					Delay_ms(100);
-					if(getSn_IR(0) & Sn_IR_RECV)
-					{
-						setSn_IR(0, Sn_IR_RECV);															// Sn_IR的RECV位置1
-					}
-					// 数据回环测试程序：数据从远程上位机发给W5500，W5500接收到数据后再回给远程上位机
-					if((len=getSn_RX_RSR(0))>0)
-					{ 
-						memset(buffer,0,len+1);
-						recvfrom(0,buffer, len, remote_ip,&remote_port);			// W5500接收来自远程上位机的数据，并通过SPI发送给MCU
-						printf("%s\r\n",buffer);															// 串口打印接收到的数据
-						sendto(0,buffer,len, remote_ip, remote_port);		  		// 接收到数据后再回给远程上位机，完成数据回环
-						//memset(buffer,0,sizeof(buffer));
-					}
-			break;
-			case SOCK_CLOSED:																						// Socket处于关闭状态
-					socket(0,Sn_MR_UDP,local_port,0);												// 打开Socket0，并配置为UDP模式，打开一个本地端口
-			break;
-		}
+	{
+		case SOCK_UDP:																							// Socket处于初始化完成(打开)状态
+				Delay_ms(100);
+				if(getSn_IR(0) & Sn_IR_RECV)
+				{
+					setSn_IR(0, Sn_IR_RECV);															// Sn_IR的RECV位置1
+				}
+				// 数据回环测试程序：数据从远程上位机发给W5500，W5500接收到数据后再回给远程上位机
+				if((len=getSn_RX_RSR(0))>0)
+				{ 
+					memset(buffer,0,len+1);
+					recvfrom(0,buffer, len, remote_ip,&remote_port);			// W5500接收来自远程上位机的数据，并通过SPI发送给MCU
+					printf("%s\r\n",buffer);															// 串口打印接收到的数据
+					sendto(0,buffer,len, remote_ip, remote_port);		  		// 接收到数据后再回给远程上位机，完成数据回环
+					//memset(buffer,0,sizeof(buffer));
+				}
+				// W5500从串口发数据给客户端程序，数据需以回车结束
+				if(USART_RX_STA & 0x8000)				// 判断串口数据是否接收完成
+				{					   
+					len=USART_RX_STA & 0x3fff;		// 获取串口接收到数据的长度
+					sendto(0,USART_RX_BUF,len,remote_ip, remote_port);			// W5500向客户端发送数据
+					USART_RX_STA=0;								// 串口接收状态标志位清0
+					memset(USART_RX_BUF,0,len+1);	// 串口接收缓存清0
+				}
+		break;
+		case SOCK_CLOSED:																						// Socket处于关闭状态
+				socket(0,Sn_MR_UDP,local_port,0);												// 打开Socket0，并配置为UDP模式，打开一个本地端口
+		break;
+	}
 }

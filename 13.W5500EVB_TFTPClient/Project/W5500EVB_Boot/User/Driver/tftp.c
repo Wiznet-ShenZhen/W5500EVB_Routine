@@ -5,6 +5,7 @@
 #include "ult.h"
 #include "w5500.h"
 #include "socket.h"
+#include "usart.h"
 
 /* Global Variable ----------------------------------------------*/
 static int		g_tftp_socket = -1;
@@ -663,5 +664,60 @@ void save_data(uint8_t *data, uint32_t data_len, uint16_t block_number)
 		}
 	}
 	FLASH_Lock();//上锁
+}
+
+int get_usart_buf(void)
+{
+	uint8 len;
+	if(USART_RX_STA&0x8000)  
+	{	
+		len=USART_RX_STA&0x3fff;//得到此次接收到的数据长度
+		printf("\r\nsend new version filename: %s\r\n",USART_RX_BUF);
+		memcpy(ConfigMsg.filename,USART_RX_BUF,len);		
+		USART_RX_STA=0;
+		memset(USART_RX_BUF,0,len+1);
+		return 1;
+	}
+  else
+  {
+		return 0;
+	}	
+}
+
+void tftp_start(void)
+{
+	uint8 ret;	
+	uint32_t tftp_server;
+	
+	printf(" TFTP START\r\n");
+	tftp_server = (remote_ip[0] << 24) | (remote_ip[1] << 16) | (remote_ip[2] << 8) | (remote_ip[3]);
+	TFTP_read_request(tftp_server,ConfigMsg.filename);
+	while(1)
+	{	
+		ret = TFTP_run();							
+		//if(ret == TFTP_SUCCESS)
+		if(ret != TFTP_PROGRESS)
+		break;
+	}
+	if(ret == TFTP_SUCCESS)
+	{
+		printf("TFTP SUCCEED\r\n");	
+		TIM_Cmd(TIM3, DISABLE);							
+		Delay_ms(10);
+		reboot_app();
+	}	
+}
+
+void check_flash_app(void)
+{
+	u32 addr; 
+  u32 app_first_4_bytes;
+	
+	addr = ApplicationAddress;
+  app_first_4_bytes = *(vu32*)addr;
+  if ((app_first_4_bytes & 0xffffffff) == 0xffffffff)//there is no app code in flash
+  { 
+		write_config_to_eeprom(); 
+  }	
 }
 

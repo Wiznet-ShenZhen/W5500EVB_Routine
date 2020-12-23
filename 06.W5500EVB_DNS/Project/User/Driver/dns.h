@@ -80,6 +80,6 @@ struct dhdr
 
 extern uint8 DNS_GET_IP[4];
 uint8 dns_query(uint8 s, uint8 * name);
-uint16 do_dns(uint8 *domain_name);
+uint16 do_dns(void);
 uint8 check_usart_buf(void);
 #endif	/* _DNS_H_ */

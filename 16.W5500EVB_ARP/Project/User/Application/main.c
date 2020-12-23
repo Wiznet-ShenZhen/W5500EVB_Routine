@@ -1,12 +1,4 @@
-#include "usart.h"
-#include "device.h"
-#include "spi2.h"
-#include "ult.h"
-#include "socket.h"
-#include "w5500.h"
-#include "string.h"
-#include "arp.h"
-#include "mcu_init.h"
+#include "include.h"
 
 int main()
 {
@@ -17,7 +9,7 @@ int main()
 	/***** GPIO初始化 *****/
 	GPIO_Configuration();	
 	
-	/***** NVIC初始化 *****/	
+	/***** 配置嵌套中断向量 *****/
 	NVIC_Configuration();
 	
 	/***** TIMER2初始化 *****/

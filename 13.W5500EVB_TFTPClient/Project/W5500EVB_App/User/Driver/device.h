@@ -21,5 +21,6 @@ void reboot(void);
 
 void write_config_to_eeprom(void);
 void get_config(void);
+void LED(void);
 #endif
 

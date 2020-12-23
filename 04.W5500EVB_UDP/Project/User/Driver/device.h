@@ -21,6 +21,7 @@
 #define WIZ_INT			    		GPIO_Pin_6	// in
 typedef  void (*pFunction)(void);
 void GPIO_Configuration(void);
+void NVIC_Configuration(void);
 void set_network(void);
 void write_config_to_eeprom(void);
 void set_default(void);

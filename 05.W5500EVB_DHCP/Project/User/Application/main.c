@@ -1,36 +1,24 @@
-#include <stm32f10x.h>
-#include "mcu_init.h"
-#include "config.h"
-#include "device.h"
-#include "spi2.h"
-#include "socket.h"
-#include "w5500.h"
-#include "util.h"
-#include "dhcp.h"
-#include "string.h"
-#include <stdio.h>
+#include "include.h"
 
 int main()
-{
-	/***** 配置单片机系统时钟 *****/
-  RCC_Configuration(); 
+{	
+	/***** MCU时钟初始化 *****/				  
+	Systick_Init(72);
+  RCC_Configuration(); 	
 	
 	/***** 配置嵌套中断向量 *****/
 	NVIC_Configuration();
+
+	/***** 定时器初始化 *****/
+	Timer_Configuration();
 	
-	/***** 初始化Systick工作时钟 *****/
-	Systick_Init(72);
-	
-	/***** 配置GPIO *****/ 
+	/***** GPIO初始化 *****/ 
   GPIO_Configuration();
 	
 	/***** 初始化SPI接口 *****/  
 	WIZ_SPI_Init();
 	
-	/***** 定时器初始化 *****/
-	Timer_Configuration();
-	
-	/***** 初始化串口通信:115200@8-n-1 *****/
+	/***** 串口初始化 *****/
   USART1_Init(); 
   
 	/***** 硬重启W5500 *****/

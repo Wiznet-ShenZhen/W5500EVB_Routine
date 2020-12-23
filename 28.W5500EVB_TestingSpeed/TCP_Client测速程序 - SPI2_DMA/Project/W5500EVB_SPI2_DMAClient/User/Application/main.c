@@ -1,23 +1,20 @@
-#include "usart.h"
-#include "device.h"
-#include "spi2.h"
-#include "ult.h"
-#include "socket.h"
-#include "w5500.h"
-#include "string.h"
-#include "tcp.h"
+#include "include.h"
 
 int main(void)
 {	
   /***** MCU时钟初始化 *****/							  
 	Systick_Init(72);	
 	
-	/***** 中断控制器配置 *****/
+	/***** 配置嵌套中断向量 *****/
 	NVIC_Configuration();
 	
-	/***** GPIO、SPI、DMA初始化 *****/
-	GPIO_Configuration();			
+	/***** GPIO初始化 *****/
+	GPIO_Configuration();		
+
+	/***** DMA初始化 *****/	
 	DMA_Configuration();
+	
+	/***** SPI初始化 *****/
 	WIZ_SPI_Init();
 	
 	/***** 串口初始化 *****/

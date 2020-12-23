@@ -74,3 +74,31 @@ void get_config(void)
 //  //save to flash
 //  write_config_to_eeprom();
 }
+
+void LED(void)
+{
+	uint8 i,t;
+	for(i=0;i<=4;i++)
+	{
+		GPIO_Write(GPIOA,t);
+		t=(t<<1)+1;
+		Delay_ms(1000);
+	}
+	t=0xfe;
+	for(i=0;i<=4;i++)
+	{
+		GPIO_Write(GPIOA,t);
+		t=(t<<1);
+		Delay_ms(100);
+	}
+	t=0xfe;		
+	GPIO_SetBits(GPIOA, GPIO_Pin_3); // led off
+	Delay_ms(100);		
+	GPIO_SetBits(GPIOA, GPIO_Pin_2); // led off 
+	Delay_ms(100);		
+	GPIO_SetBits(GPIOA, GPIO_Pin_1);
+	Delay_ms(100);	
+	GPIO_SetBits(GPIOA, GPIO_Pin_0);	
+	Delay_ms(100);
+}
+
