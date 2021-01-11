@@ -2,9 +2,9 @@
 
 int main()
 {
-	/***** MCU时钟初始化 *****/		
-  RCC_Configuration();	
+	/***** MCU时钟初始化 *****/	
 	Systick_Init(72);	
+	RCC_Configuration();
 	
 	/***** GPIO初始化 *****/
 	GPIO_Configuration();	
